@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # flutter_my_first
 
 A new Flutter application.
