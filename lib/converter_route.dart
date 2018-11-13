@@ -2,22 +2,32 @@ import 'package:flutter/material.dart';
 import 'package:flutter_my_first/unit.dart';
 final _backgroundColor = Colors.green[100];
 
-class ConverterRoute extends StatelessWidget {
+
+class ConverterRoute extends StatefulWidget {
   final String name;
   final Color color;
   final List<Unit> units;
+
 
   const ConverterRoute({
     @required this.name,
     @required this.color,
     @required this.units,
-}) : assert(name != null),
-  assert(color != null),
-  assert(units != null);
+  }) : assert(name != null),
+        assert(color != null),
+        assert(units != null);
 
 
 
 
+
+  @override
+  State<StatefulWidget> createState() {
+    _ConverterRouteState();
+  }
+}
+
+class _ConverterRouteState extends State<ConverterRoute> {
   @override
   Widget build(BuildContext context) {
     final unitWidgets = units.map((Unit unit){
@@ -28,27 +38,20 @@ class ConverterRoute extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Text(
-          unit.name,
-          style: Theme.of(context).textTheme.headline,
+              unit.name,
+              style: Theme.of(context).textTheme.headline,
+            ),
+            Text(
+                'Conversion : ${unit.conversion}',
+                style : Theme.of(context).textTheme.subhead
+            ),
+          ],
         ),
-        Text(
-        'Conversion : ${unit.conversion}',
-      style : Theme.of(context).textTheme.subhead
-      ),
-      ],
-      ),
       );
     }).toList();
 
     return ListView(
       children: unitWidgets,
     );
-
   }
-
-
-
-
-
-
 }
