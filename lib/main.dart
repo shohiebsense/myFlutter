@@ -9,7 +9,7 @@ import 'package:flutter_my_first/category_route.dart';
 const _categoryName = 'Cake';
 const _categoryIcon = Icons.cake;
 const _categoryColor = Colors.green;
-
+/*
 class HelloWidget extends StatelessWidget {
   Widget getContainer() {
     return Center(
@@ -32,6 +32,10 @@ class HelloWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return getContainer();
   }
+}*/
+
+void main() {
+  runApp(UnitConverterApp());
 }
 
 class UnitConverterApp extends StatelessWidget {
@@ -47,6 +51,4 @@ class UnitConverterApp extends StatelessWidget {
 }
 
 
-void main() {
-  runApp(UnitConverterApp());
-}
+

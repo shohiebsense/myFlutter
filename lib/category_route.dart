@@ -8,9 +8,8 @@ class CategoryRoute extends StatefulWidget {
   const CategoryRoute();
 
   @override
-  State<StatefulWidget> createState() {
-    _CategoryRouteState();
-  }
+  _CategoryRouteState createState() =>_CategoryRouteState();
+
 
 }
 class _CategoryRouteState extends State<CategoryRoute>{
@@ -92,7 +91,7 @@ class _CategoryRouteState extends State<CategoryRoute>{
 
 
     final appBar = AppBar(
-      elevation: 0.0,
+      //elevation: 0.0,
       title: Text(
         'Unit Converter',
         style: TextStyle(
