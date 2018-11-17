@@ -6,4 +6,4 @@ For help getting started with Flutter, view our online
 
 # myFlutter
 
-The app based on course on the udacity
+The app is based on course at the udacity
