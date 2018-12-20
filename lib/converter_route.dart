@@ -44,6 +44,7 @@ class _ConverterRouteState extends State<ConverterRoute> {
               labelStyle: Theme.of(context).textTheme.display1,
               errorText: _showValidationError ? 'Invalid number entered' : null,
               labelText: 'Input',
+              fillColor: Colors.grey[700],
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(0.0),
               ),

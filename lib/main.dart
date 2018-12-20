@@ -19,10 +19,10 @@ class UnitConverterApp extends StatelessWidget {
       theme: ThemeData(
         textTheme: Theme.of(context).textTheme.apply(
           bodyColor: Colors.black,
-          displayColor: Colors.grey[100],
+          displayColor: Colors.grey[700],
         ),
         primaryColor: Colors.grey[500],
-        textSelectionHandleColor: Colors.green[500],
+        textSelectionHandleColor: Colors.blue[500],
       ),
       home: CategoryRoute(),
     );
