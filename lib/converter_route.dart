@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_my_first/unit.dart';
+import 'package:meta/meta.dart';
+
 const _padding = EdgeInsets.all(16.0);
 final _backgroundColor = Colors.green[100];
 
@@ -27,7 +29,7 @@ class _ConverterRouteState extends State<ConverterRoute> {
   Unit _fromValue;
   Unit _toValue;
   double _inputValue;
-  String _convertedValue;
+  String _convertedValue = '';
   List<DropdownMenuItem> _unitMenuItems;
   bool _showValidationError = false;
 

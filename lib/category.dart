@@ -16,8 +16,7 @@ class Category extends StatelessWidget {
     @required this.color,
     @required this.iconLocation,
     @required this.units,
-  })
-      : assert(name != null),
+  }):   assert(name != null),
         assert(color != null),
         assert(iconLocation != null),
         assert(units != null),

@@ -14,7 +14,6 @@ class CategoryRoute extends StatefulWidget {
 }
 class _CategoryRouteState extends State<CategoryRoute>{
   final _categories = <Category>[];
-
   static const _categoryNames = <String> [
     'Length',
     'Area',
@@ -27,8 +26,7 @@ class _CategoryRouteState extends State<CategoryRoute>{
   ];
 
   static const _baseColors = <ColorSwatch>[
-    ColorSwatch(0xFF6AB7A8,
-        {
+    ColorSwatch(0xFF6AB7A8, {
           'highlight' : Color(0xFF6AB7A8),
           'splash' : Color(0xFF0ABC9B),
         }),
@@ -100,9 +98,9 @@ class _CategoryRouteState extends State<CategoryRoute>{
   @override
   Widget build(BuildContext context) {
     final listView = Container(
-        color: _backgroundColor,
-        padding: EdgeInsets.symmetric(horizontal: 8.0),
-        child: _buildCategoryWidgets()
+      color: _backgroundColor,
+      padding: EdgeInsets.symmetric(horizontal: 8.0),
+      child: _buildCategoryWidgets(),
     );
 
     final appBar = AppBar(
@@ -120,7 +118,7 @@ class _CategoryRouteState extends State<CategoryRoute>{
 
     return Scaffold(
         appBar: appBar,
-        body: listView
+        body: listView,
     );
   }
 }
