@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_my_first/category.dart';
-import 'package:flutter_my_first/unit.dart';
+import 'package:flutter_my_first/model/category.dart';
+import 'package:flutter_my_first/model/unit.dart';
 
 final _backgroundColor = Colors.green[100];
 

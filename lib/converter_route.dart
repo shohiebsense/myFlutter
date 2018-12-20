@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_my_first/unit.dart';
+import 'package:flutter_my_first/model/unit.dart';
 import 'package:meta/meta.dart';
 
 const _padding = EdgeInsets.all(16.0);
-final _backgroundColor = Colors.green[100];
 
 class ConverterRoute extends StatefulWidget {
   final String name;
@@ -22,7 +21,6 @@ class ConverterRoute extends StatefulWidget {
 
   @override
   _ConverterRouteState createState() =>_ConverterRouteState();
-
 }
 
 class _ConverterRouteState extends State<ConverterRoute> {
@@ -133,7 +131,7 @@ class _ConverterRouteState extends State<ConverterRoute> {
   void initState(){
     super.initState();
     _createDropdownMenuItems();
-    _setDefaults;
+    _setDefaults();
   }
 
   Widget _createDropDown(String currentValue, ValueChanged<dynamic> onChanged){
